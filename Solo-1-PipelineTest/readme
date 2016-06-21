@@ -1,0 +1,12 @@
+
+To compile this code on Linux:
+
+gcc -Wall solo-stream.c -o solo-stream $(pkg-config --cflags --libs gstreamer-1.0)
+
+Gain access to the control app
+
+nc 10.1.1.1 5502
+
+Then run 
+
+./solo-stream
