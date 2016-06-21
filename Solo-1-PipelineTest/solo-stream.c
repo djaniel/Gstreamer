@@ -1,4 +1,13 @@
 
+/*
+ * 
+ * Author: Daniel Soto
+ * Date: June 21st, 2016
+ * 
+ * 
+ */
+
+
 #include <gst/gst.h>
 #include <glib.h>
 
@@ -14,9 +23,7 @@ typedef struct _CustomData {
     GstElement *dec_h264;
     GstElement *video_convert;
     GstElement *video_sink;
-    
-    gboolean playing;      /* Are we in the PLAYING state? */
-    gboolean terminate;    /* Should we terminate execution? */
+
 } CustomData;
 
 static gboolean bus_call (GstBus *bus, GstMessage *msg, gpointer data)

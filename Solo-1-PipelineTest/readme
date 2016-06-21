@@ -3,10 +3,16 @@ To compile this code on Linux:
 
 gcc -Wall solo-stream.c -o solo-stream $(pkg-config --cflags --libs gstreamer-1.0)
 
-Gain access to the control app
+On another terminal gain access to the control app
 
 nc 10.1.1.1 5502
 
 Then run 
 
 ./solo-stream
+
+If you want to know how this code works, I'd suggest to read the following webpage:
+
+http://docs.gstreamer.com/display/GstSDK/Basic+tutorials
+
+You may require to install gstreamer1.0 development packages.
